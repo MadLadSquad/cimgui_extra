@@ -7,6 +7,7 @@ C APIs for popular dear imgui widgets libraries. Current libraries supported and
 
 1. [imgui-knobs](https://github.com/altschuler/imgui-knobs) - Hand-written
 1. [imgui\_toggle](https://github.com/cmdwtf/imgui_toggle) - Hand-written
+2. [imspinner](https://github.com/dalerank/imspinner) - Hand-written
 
 ## Installation and learning
 All documentation can be found on the [wiki](https://github.com/MadLadSquad/cimgui_extra/wiki/HOME).
