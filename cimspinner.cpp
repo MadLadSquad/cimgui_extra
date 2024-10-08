@@ -1,6 +1,5 @@
 #include "cimspinner.h"
 
-#include "imspinner.h"
 #ifdef __has_include
 #if __has_include(<imspinner.h>)
 #include <imspinner.h>
