@@ -141,6 +141,11 @@ void ImSpinner_SpinnerSplineAng(const char* label, const float radius, const flo
 {
     ImSpinner::SpinnerSplineAng(label, radius, thickness, CCAST(color), CCAST(bg), speed, angle, mode);
 }
+
+void ImSpinner_SpinnerPointsRoller(const char* label, const float radius, const float thickness, const CImXVec4* color, const float speed, const size_t points, const int circles, const float rspeed)
+{
+    ImSpinner::SpinnerPointsRoller(label, radius, thickness, CCAST(color), speed, points, circles, rspeed);
+}
  
 void ImSpinner_SpinnerTwinPulsar(const char* label, const float radius, const float thickness, const CImXVec4* color, const float speed, const int rings, const int mode)
 {
@@ -315,6 +320,11 @@ void ImSpinner_SpinnerModCircle(const char* label, const float radius, const flo
 void ImSpinner_SpinnerRotateSegmentsPulsar(const char* label, const float radius, const float thickness, const CImXVec4* color, const float speed, const size_t arcs, const size_t layers)
 {
     ImSpinner::SpinnerRotateSegmentsPulsar(label, radius, thickness, CCAST(color), speed, arcs, layers);
+}
+
+void ImSpinner_SpinnerThickToSin(const char* label, const float radius, const float thickness, const CImXVec4* color, const float speed, const int lt, const int mode)
+{
+    ImSpinner::SpinnerThickToSin(label, radius, thickness, CCAST(color), speed, lt, mode);
 }
 
 void ImSpinner_SpinnerRotatingHeart(const char* label, const float radius, const float thickness, const CImXVec4* color, const float speed, const float ang_min)

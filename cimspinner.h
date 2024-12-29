@@ -42,6 +42,7 @@ extern "C"
     MLS_PUBLIC_API void ImSpinner_SpinnerDnaDots(               const char* label, float        radius,     float thickness,        const CImXVec4* color,          float           speed,          int             lt,         float           delta,      bool            mode    );
     MLS_PUBLIC_API void ImSpinner_Spinner3SmuggleDots(          const char* label, float        radius,     float thickness,        const CImXVec4* color,          float           speed,          int             lt,         float           delta,      bool            mode    );
     MLS_PUBLIC_API void ImSpinner_SpinnerSplineAng(             const char* label, float        radius,     float thickness,        const CImXVec4* color,          const CImXVec4* bg,             float           speed,      float           angle,      int             mode    );
+    MLS_PUBLIC_API void ImSpinner_SpinnerPointsRoller(          const char* label, float        radius,     float thickness,        const CImXVec4* color,          float           speed,          size_t          points,     int             circles,    float           rspeed);
 
     MLS_PUBLIC_API void ImSpinner_SpinnerTwinPulsar(            const char* label, float        radius,     float thickness,        const CImXVec4* color,          float           speed,          int             rings,      int             mode        );
     MLS_PUBLIC_API void ImSpinner_SpinnerBounceDots(            const char* label, float        radius,     float thickness,        const CImXVec4* color,          float           speed,          size_t          dots,       int             mode        );
@@ -78,6 +79,7 @@ extern "C"
     MLS_PUBLIC_API void ImSpinner_SpinnerCaleidoscope(          const char* label, float        radius,     float thickness,        const CImXVec4* color,          float           speed,          size_t          arcs,       int             mode        );
     MLS_PUBLIC_API void ImSpinner_SpinnerModCircle(             const char* label, float        radius,     float thickness,        const CImXVec4* color,          float           ang_min,        float           ang_max,    float           speed       );
     MLS_PUBLIC_API void ImSpinner_SpinnerRotateSegmentsPulsar(  const char* label, float        radius,     float thickness,        const CImXVec4* color,          float           speed,          size_t          arcs,       size_t          layers      );
+    MLS_PUBLIC_API void ImSpinner_SpinnerThickToSin(            const char* label, float        radius,     float thickness,        const CImXVec4* color,         float           speed,          int             lt,         int             mode        );
 
     MLS_PUBLIC_API void ImSpinner_SpinnerRotatingHeart(         const char* label, float        radius,     float thickness,        const CImXVec4* color,          float           speed,          float           ang_min );
     MLS_PUBLIC_API void ImSpinner_SpinnerClock(                 const char* label, float        radius,     float thickness,        const CImXVec4* color,          const CImXVec4* bg,             float           speed   );
