@@ -16,22 +16,24 @@ extern "C"
     typedef enum ImGuiKnob_Flags_
     {
         CImGuiKnob_flags_None            = 0,
-        CImGuiKnob_Flags_NoTitle         = 1<<0,
-        CImGuiKnob_Flags_NoInput         = 1<<1,
-        CImGuiKnob_Flags_ValueTooltip    = 1<<2,
-        CImGuiKnob_Flags_DragHorizontal  = 1<<3,
-        CImGuiKnob_Flags_DragVertical    = 1<<4,
+        CImGuiKnob_Flags_NoTitle         = 1 << 0,
+        CImGuiKnob_Flags_NoInput         = 1 << 1,
+        CImGuiKnob_Flags_ValueTooltip    = 1 << 2,
+        CImGuiKnob_Flags_DragHorizontal  = 1 << 3,
+        CImGuiKnob_Flags_DragVertical    = 1 << 4,
+        CImGuiKnob_Flags_Logarithmic     = 1 << 5,
+        CImGuiKnob_Flags_AlwaysClamp     = 1 << 6
     } ImGuiKnob_Flags_;
 
     typedef enum ImGuiKnob_Variant_
     {
-        CImGuiKnob_Variant_Tick      = 1<<0,
-        CImGuiKnob_Variant_Dot       = 1<<1,
-        CImGuiKnob_Variant_Wiper     = 1<<2,
-        CImGuiKnob_Variant_WiperOnly = 1<<3,
-        CImGuiKnob_Variant_WiperDot  = 1<<4,
-        CImGuiKnob_Variant_Stepped   = 1<<5,
-        CImGuiKnob_Variant_Space     = 1<<6,
+        CImGuiKnob_Variant_Tick      = 1 << 0,
+        CImGuiKnob_Variant_Dot       = 1 << 1,
+        CImGuiKnob_Variant_Wiper     = 1 << 2,
+        CImGuiKnob_Variant_WiperOnly = 1 << 3,
+        CImGuiKnob_Variant_WiperDot  = 1 << 4,
+        CImGuiKnob_Variant_Stepped   = 1 << 5,
+        CImGuiKnob_Variant_Space     = 1 << 6,
     } ImGuiKnob_Variant_;
 
     typedef struct MLS_PUBLIC_API ImGuiKnob_color_set_t
