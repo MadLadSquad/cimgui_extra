@@ -502,9 +502,9 @@ void ImSpinner_SpinnerFadeBars(const char* label, const float w, const CImXVec4*
     ImSpinner::SpinnerFadeBars(label, w, CCAST(color), speed, bars, scale);
 }
 
-void ImSpinner_SpinnerFadeTris(const char* label, const float radius, const CImXVec4* color, const float speed, const size_t dim, const bool scale)
+void ImSpinner_SpinnerFadeTris(const char* label, const float radius, const CImXVec4* color, const float speed, const size_t dim, const bool scale, const int mode)
 {
-    ImSpinner::SpinnerFadeTris(label, radius, CCAST(color), speed, dim, scale);
+    ImSpinner::SpinnerFadeTris(label, radius, CCAST(color), speed, dim, scale, mode);
 }
 
 void ImSpinner_SpinnerFilledArcColor(const char* label, const float radius, const CImXVec4* color, const CImXVec4* bg, const float speed, const size_t arcs)
@@ -585,6 +585,11 @@ void ImSpinner_SpinnerCircularPoints(const char* label, const float radius, cons
 void ImSpinner_SpinnerCurvedCircle(const char* label, const float radius, const float thickness, const CImXVec4* color, const float speed, const size_t circles)
 {
     ImSpinner::SpinnerCurvedCircle(label, radius, thickness, CCAST(color), speed, circles);
+}
+
+void ImSpinner_SpinnerFadePulsarSquare(const char* label, const float radius, const CImXVec4* color, const float speed, const int rings, const int mode)
+{
+    ImSpinner::SpinnerFadePulsarSquare(label, radius, CCAST(color), speed, rings, mode);
 }
  
 void ImSpinner_SpinnerArcWedges(const char* label, const float radius, const CImXVec4* color, const float speed, const size_t arcs)
