@@ -660,7 +660,7 @@ CIMGUI_API void ImPlot_AnnotationStr(const double x, const double y, const c::Im
     va_end(args);
 }
 
-CIMGUI_API void ImPlot_AnnotationV(const double x, const double y, const c::ImVec4 col, const c::ImVec2 pix_offset, const bool clamp, const char* fmt, const va_list args)
+CIMGUI_API void ImPlot_AnnotationV(const double x, const double y, const c::ImVec4 col, const c::ImVec2 pix_offset, const bool clamp, const char* fmt, va_list args)
 {
     ::ImPlot::AnnotationV(x, y, reinterpret_cast<const ::ImVec4&>(col), reinterpret_cast<const ::ImVec2&>(pix_offset), clamp, fmt, args);
 }
@@ -683,7 +683,7 @@ CIMGUI_API void ImPlot_TagXStr(const double x, const c::ImVec4 col, const char* 
     va_end(args);
 }
 
-CIMGUI_API void ImPlot_TagXV(const double x, const c::ImVec4 col, const char* fmt, const va_list args)
+CIMGUI_API void ImPlot_TagXV(const double x, const c::ImVec4 col, const char* fmt, va_list args)
 {
     ::ImPlot::TagXV(x, reinterpret_cast<const ::ImVec4&>(col), fmt, args);
 }
@@ -706,7 +706,7 @@ CIMGUI_API void ImPlot_TagYStr(const double y, const c::ImVec4 col, const char* 
     va_end(args);
 }
 
-CIMGUI_API void ImPlot_TagYV(const double y, const c::ImVec4 col, const char* fmt, const va_list args)
+CIMGUI_API void ImPlot_TagYV(const double y, const c::ImVec4 col, const char* fmt, va_list args)
 {
     ::ImPlot::TagYV(y, reinterpret_cast<const ::ImVec4&>(col), fmt, args);
 }
