@@ -48,6 +48,7 @@
 
 // Auto-generated forward declarations for C header
 #pragma once
+#ifndef DISABLE_CIMPLOT
 typedef struct ImPlotPoint_t ImPlotPoint;
 typedef struct ImPlotRange_t ImPlotRange;
 typedef struct ImPlotRect_t ImPlotRect;
@@ -1362,4 +1363,5 @@ CIMGUI_API void ImPlot_ShowDemoWindowEx(bool* p_open /* = nullptr */);
 #endif// #ifndef IMGUI_DISABLE
 #ifdef __cplusplus
 } // End of extern "C" block
+#endif
 #endif
