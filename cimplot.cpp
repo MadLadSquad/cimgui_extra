@@ -561,14 +561,14 @@ CIMGUI_API void ImPlot_PlotDigitalG(const char* label_id, const c::ImPlotGetter 
 
 #ifdef IMGUI_HAS_TEXTURES
 
-CIMGUI_API void ImPlot_PlotImage(const char* label_id, c::ImTextureRef tex_ref, c::ImPlotPoint bounds_min, c::ImPlotPoint bounds_max)
+CIMGUI_API void ImPlot_PlotImage(const char* label_id, c::ImTextureRef tex_ref, const c::ImPlotPoint bounds_min, const c::ImPlotPoint bounds_max)
 {
-    ::ImPlot::PlotImage(label_id, tex_ref, reinterpret_cast<const ::ImPlotPoint&>(bounds_min), reinterpret_cast<const ::ImPlotPoint&>(bounds_max));
+    ::ImPlot::PlotImage(label_id, *reinterpret_cast<::ImTextureRef*>(&tex_ref), reinterpret_cast<const ::ImPlotPoint&>(bounds_min), reinterpret_cast<const ::ImPlotPoint&>(bounds_max));
 }
 
-CIMGUI_API void ImPlot_PlotImageEx(const char* label_id, c::ImTextureRef tex_ref, c::ImPlotPoint bounds_min, c::ImPlotPoint bounds_max, c::ImVec2 uv0, c::ImVec2 uv1, c::ImVec4 tint_col, c::ImPlotImageFlags flags)
+CIMGUI_API void ImPlot_PlotImageEx(const char* label_id, c::ImTextureRef tex_ref, const c::ImPlotPoint bounds_min, const c::ImPlotPoint bounds_max, c::ImVec2 uv0, c::ImVec2 uv1, c::ImVec4 tint_col, c::ImPlotImageFlags flags)
 {
-    ::ImPlot::PlotImage(label_id, tex_ref, reinterpret_cast<const ::ImPlotPoint&>(bounds_min), reinterpret_cast<const ::ImPlotPoint&>(bounds_max), reinterpret_cast<const ::ImVec2&>(uv0), reinterpret_cast<const ::ImVec2&>(uv1), reinterpret_cast<const ::ImVec4&>(tint_col), flags);
+    ::ImPlot::PlotImage(label_id, *reinterpret_cast<::ImTextureRef*>(&tex_ref), reinterpret_cast<const ::ImPlotPoint&>(bounds_min), reinterpret_cast<const ::ImPlotPoint&>(bounds_max), reinterpret_cast<const ::ImVec2&>(uv0), reinterpret_cast<const ::ImVec2&>(uv1), reinterpret_cast<const ::ImVec4&>(tint_col), flags);
 }
 
 #endif // #ifdef IMGUI_HAS_TEXTURES
