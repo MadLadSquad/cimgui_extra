@@ -412,9 +412,9 @@ void ImSpinner_SpinnerRingWatermarks(const char* label, const float radius, cons
     ImSpinner::SpinnerRingWatermarks(label, radius, thickness, CCAST(color), speed, elipses);
 }
 
-void ImSpinner_SpinnerRainbowShot(const char* label, const float radius, const float thickness, const CImXVec4* color, const float speed, const int balls)
+void ImSpinner_SpinnerRainbowShot(const char* label, const float radius, const float thickness, const CImXVec4* color, const float speed, const int balls, const int mode)
 {
-    ImSpinner::SpinnerRainbowShot(label, radius, thickness, CCAST(color), speed, balls);
+    ImSpinner::SpinnerRainbowShot(label, radius, thickness, CCAST(color), speed, balls, mode);
 }
 
 void ImSpinner_SpinnerSpiral(const char* label, const float radius, const float thickness, const CImXVec4* color, const float speed, const size_t arcs)
