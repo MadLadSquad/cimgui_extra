@@ -3,6 +3,7 @@
 #ifdef __has_include
 #if __has_include(<imspinner.h>)
 #include <imspinner.h>
+#include <imspinner_text.h>
 
 #define CCAST(x) *reinterpret_cast<const ImColor*>(x)
 
@@ -682,5 +683,69 @@ void ImSpinner_SpinnerSquishSquare(const char* label, const float radius, const 
     ImSpinner::SpinnerSquishSquare(label, radius, CCAST(color), speed);
 }
 
+void ImSpinner_SpinnerTextFade(const char* label, const float radius, const CImXVec4* color, const float speed, const char* text)
+{
+    ImSpinner::SpinnerTextFade(label, radius, CCAST(color), speed, text);
+}
+
+void ImSpinner_SpinnerTextUnderline(const char* label, const float radius, const CImXVec4* color, const float speed, const float thickness, const char* text)
+{
+    ImSpinner::SpinnerTextUnderline(label, radius, CCAST(color), speed, thickness, text);
+}
+
+void ImSpinner_SpinnerTextUnderlineDots(const char* label, const float radius, const CImXVec4* color, const float speed, const float thickness, const int dashes, const char* text)
+{
+    ImSpinner::SpinnerTextUnderlineDots(label, radius, CCAST(color), speed, thickness, dashes, text);
+}
+
+void ImSpinner_SpinnerTextTyping(const char* label, const float radius, const CImXVec4* color, const float speed, const int tail, const char* text)
+{
+    ImSpinner::SpinnerTextTyping(label, radius, CCAST(color), speed, tail, text);
+}
+
+void ImSpinner_SpinnerTextScroll(const char* label, const float radius, const CImXVec4* color, const float speed, const char* text)
+{
+    ImSpinner::SpinnerTextScroll(label, radius, CCAST(color), speed, text);
+}
+
+void ImSpinner_SpinnerTextColorFill(const char* label, const float radius, const CImXVec4* color, const CImXVec4* bg, const float speed, const int mode, const char* text)
+{
+    ImSpinner::SpinnerTextColorFill(label, radius, CCAST(color), CCAST(bg), speed, mode, text);
+}
+
+void ImSpinner_SpinnerTextScrollColors(const char* label, const float radius, const CImXVec4* color, const float speed, const char* text)
+{
+    ImSpinner::SpinnerTextScrollColors(label, radius, CCAST(color), speed, text);
+}
+
+void ImSpinner_SpinnerTextColorCycle(const char* label, const float radius, const CImXVec4* color, const float speed, const char* text)
+{
+    ImSpinner::SpinnerTextColorCycle(label, radius, CCAST(color), speed, text);
+}
+
+void ImSpinner_SpinnerTextBounce(const char* label, const float radius, const CImXVec4* color, const float speed, const char* text)
+{
+    ImSpinner::SpinnerTextBounce(label, radius, CCAST(color), speed, text);
+}
+
+void ImSpinner_SpinnerTextSplit(const char* label, const float radius, const CImXVec4* color, const float speed, const int mode, const char* text)
+{
+    ImSpinner::SpinnerTextSplit(label, radius, CCAST(color), speed, mode, text);
+}
+
+void ImSpinner_SpinnerTextUnderlineScroll(const char* label, const float radius, const CImXVec4* color, const float speed, const float thickness, const char* text)
+{
+    ImSpinner::SpinnerTextUnderlineScroll(label, radius, CCAST(color), speed, thickness, text);
+}
+
+void ImSpinner_SpinnerTextRoll(const char* label, const float radius, const CImXVec4* color, const float speed, const char* text)
+{
+    ImSpinner::SpinnerTextRoll(label, radius, CCAST(color), speed, text);
+}
+
+void ImSpinner_SpinnerTextColorful(const char* label, const float radius, const CImXVec4* color, const float speed, const char* text)
+{
+    ImSpinner::SpinnerTextColorful(label, radius, CCAST(color), speed, text);
+}
 #endif
 #endif
