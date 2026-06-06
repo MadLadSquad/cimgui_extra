@@ -4,10 +4,14 @@
 #if __has_include(<imspinner.h>)
 #include <imspinner.h>
 #include <imspinner_text.h>
+#include <imspinner_bars.h>
+#include <imspinner_dots.h>
+#include <imspinner_shapes.h>
+#include <imspinner_compat.h>
 
 #define CCAST(x) *reinterpret_cast<const ImColor*>(x)
 
-void ImSpinner_SpinnerAngTriple(const char* label, const float radius1, const float radius2, const float radius3, const float  thickness, const CImXVec4* c1, const CImXVec4* c2, const CImXVec4* c3, const float speed, const float angle)
+void ImSpinner_SpinnerAngTriple(const char* label, const float radius1, const float radius2, const float radius3, const float thickness, const CImXVec4* c1, const CImXVec4* c2, const CImXVec4* c3, const float speed, const float angle)
 {
     ImSpinner::SpinnerAngTriple(label, radius1, radius2, radius3, thickness, CCAST(c1), CCAST(c2), CCAST(c3), speed, angle);
 }
@@ -668,6 +672,191 @@ void ImSpinner_SpinnerArcPolarRadius(const char* label, const float radius, cons
     ImSpinner::SpinnerArcPolarRadius(label, radius, CCAST(color), speed, arcs, mode);
 }
 
+void ImSpinner_SpinnerMorphShape(const char* label, const float radius, const float thickness, const CImXVec4* color, const float speed, const int mode)
+{
+    ImSpinner::SpinnerMorphShape(label, radius, thickness, CCAST(color), speed, mode);
+}
+
+void ImSpinner_SpinnerFlipTriangle(const char* label, const float radius, const float thickness, const CImXVec4* color, const float speed, const int mode)
+{
+    ImSpinner::SpinnerFlipTriangle(label, radius, thickness, CCAST(color), speed, mode);
+}
+
+void ImSpinner_SpinnerFoldSquare(const char* label, const float radius, const float thickness, const CImXVec4* color, const float speed, const int mode)
+{
+    ImSpinner::SpinnerFoldSquare(label, radius, thickness, CCAST(color), speed, mode);
+}
+
+void ImSpinner_SpinnerPinwheel(const char* label, const float radius, const float thickness, const CImXVec4* color, const float speed, const int mode)
+{
+    ImSpinner::SpinnerPinwheel(label, radius, thickness, CCAST(color), speed, mode);
+}
+
+void ImSpinner_SpinnerCornerSquares(const char* label, const float radius, const float thickness, const CImXVec4* color, const float speed, const int mode)
+{
+    ImSpinner::SpinnerCornerSquares(label, radius, thickness, CCAST(color), speed, mode);
+}
+
+void ImSpinner_SpinnerSplitSquare(const char* label, const float radius, const float thickness, const CImXVec4* color, const float speed, const int mode)
+{
+    ImSpinner::SpinnerSplitSquare(label, radius, thickness, CCAST(color), speed, mode);
+}
+
+void ImSpinner_SpinnerCornerBurst(const char* label, const float radius, const float thickness, const CImXVec4* color, const float speed, const int mode)
+{
+    ImSpinner::SpinnerCornerBurst(label, radius, thickness, CCAST(color), speed, mode);
+}
+
+void ImSpinner_SpinnerSkewSquare(const char* label, const float radius, const float thickness, const CImXVec4* color, const float speed, const int mode)
+{
+    ImSpinner::SpinnerSkewSquare(label, radius, thickness, CCAST(color), speed, mode);
+}
+
+void ImSpinner_SpinnerTumbleSquare(const char* label, const float radius, const float thickness, const CImXVec4* color, const float speed, const int mode)
+{
+    ImSpinner::SpinnerTumbleSquare(label, radius, thickness, CCAST(color), speed, mode);
+}
+
+void ImSpinner_SpinnerTriDiamond(const char* label, const float radius, const float thickness, const CImXVec4* color, const float speed, const int mode)
+{
+    ImSpinner::SpinnerTriDiamond(label, radius, thickness, CCAST(color), speed, mode);
+}
+
+void ImSpinner_SpinnerTwinBlades(const char* label, const float radius, const float thickness, const CImXVec4* color, const float speed, const int mode)
+{
+    ImSpinner::SpinnerTwinBlades(label, radius, thickness, CCAST(color), speed, mode);
+}
+
+void ImSpinner_SpinnerCrossBlades(const char* label, const float radius, const float thickness, const CImXVec4* color, const float speed, const int mode)
+{
+    ImSpinner::SpinnerCrossBlades(label, radius, thickness, CCAST(color), speed, mode);
+}
+
+void ImSpinner_SpinnerDriftSquare(const char* label, const float radius, const float thickness, const CImXVec4* color, const float speed, const int mode)
+{
+    ImSpinner::SpinnerDriftSquare(label, radius, thickness, CCAST(color), speed, mode);
+}
+
+void ImSpinner_SpinnerPieBounce(const char* label, const float radius, const float thickness, const CImXVec4* color, const float speed, const int mode)
+{
+    ImSpinner::SpinnerPieBounce(label, radius, thickness, CCAST(color), speed, mode);
+}
+
+void ImSpinner_SpinnerLeapFrog(const char* label, const float radius, const float thickness, const CImXVec4* color, const float speed, const int mode)
+{
+    ImSpinner::SpinnerLeapFrog(label, radius, thickness, CCAST(color), speed, mode);
+}
+
+void ImSpinner_SpinnerPlusSquares(const char* label, const float radius, const float thickness, const CImXVec4* color, const float speed, const int mode)
+{
+    ImSpinner::SpinnerPlusSquares(label, radius, thickness, CCAST(color), speed, mode);
+}
+
+void ImSpinner_SpinnerSevenMarch(const char* label, const float radius, const float thickness, const CImXVec4* color, const float speed, const int mode)
+{
+    ImSpinner::SpinnerSevenMarch(label, radius, thickness, CCAST(color), speed, mode);
+}
+
+void ImSpinner_SpinnerCornerArcs(const char* label, const float radius, const float thickness, const CImXVec4* color, const float speed, const int mode)
+{
+    ImSpinner::SpinnerCornerArcs(label, radius, thickness, CCAST(color), speed, mode);
+}
+
+void ImSpinner_SpinnerWalkBlocks(const char* label, const float radius, const float thickness, const CImXVec4* color, const float speed, const int mode)
+{
+    ImSpinner::SpinnerWalkBlocks(label, radius, thickness, CCAST(color), speed, mode);
+}
+
+void ImSpinner_SpinnerTumbleHalfDisc(const char* label, const float radius, const float thickness, const CImXVec4* color, const float speed, const int mode)
+{
+    ImSpinner::SpinnerTumbleHalfDisc(label, radius, thickness, CCAST(color), speed, mode);
+}
+
+void ImSpinner_SpinnerFoldHalfDisc(const char* label, const float radius, const float thickness, const CImXVec4* color, const float speed, const int mode)
+{
+    ImSpinner::SpinnerFoldHalfDisc(label, radius, thickness, CCAST(color), speed, mode);
+}
+
+void ImSpinner_SpinnerWiperArrow(const char* label, const float radius, const float thickness, const CImXVec4* color, const float speed, const int mode)
+{
+    ImSpinner::SpinnerWiperArrow(label, radius, thickness, CCAST(color), speed, mode);
+}
+
+void ImSpinner_SpinnerSkewSquares(const char* label, const float radius, const float thickness, const CImXVec4* color, const float speed, const int mode)
+{
+    ImSpinner::SpinnerSkewSquares(label, radius, thickness, CCAST(color), speed, mode);
+}
+
+void ImSpinner_SpinnerStretchSquares(const char* label, const float radius, const float thickness, const CImXVec4* color, const float speed, const int mode)
+{
+    ImSpinner::SpinnerStretchSquares(label, radius, thickness, CCAST(color), speed, mode);
+}
+
+void ImSpinner_SpinnerTriPie(const char* label, const float radius, const float thickness, const CImXVec4* color, const float speed, const int mode)
+{
+    ImSpinner::SpinnerTriPie(label, radius, thickness, CCAST(color), speed, mode);
+}
+
+void ImSpinner_SpinnerShuffleBars(const char* label, const float radius, const float thickness, const CImXVec4* color, const float speed, const int mode)
+{
+    ImSpinner::SpinnerShuffleBars(label, radius, thickness, CCAST(color), speed, mode);
+}
+
+void ImSpinner_SpinnerHingeTumble(const char* label, const float radius, const float thickness, const CImXVec4* color, const float speed, const int mode)
+{
+    ImSpinner::SpinnerHingeTumble(label, radius, thickness, CCAST(color), speed, mode);
+}
+
+void ImSpinner_SpinnerDiagonalFlip(const char* label, const float radius, const float thickness, const CImXVec4* color, const float speed, const int mode)
+{
+    ImSpinner::SpinnerDiagonalFlip(label, radius, thickness, CCAST(color), speed, mode);
+}
+
+void ImSpinner_SpinnerPulseGrid(const char* label, const float radius, const float thickness, const CImXVec4* color, const float speed, const int mode)
+{
+    ImSpinner::SpinnerPulseGrid(label, radius, thickness, CCAST(color), speed, mode);
+}
+
+void ImSpinner_SpinnerMarchGrid(const char* label, const float radius, const float thickness, const CImXVec4* color, const float speed, const int mode)
+{
+    ImSpinner::SpinnerMarchGrid(label, radius, thickness, CCAST(color), speed, mode);
+}
+
+void ImSpinner_SpinnerSpinBars(const char* label, const float radius, const float thickness, const CImXVec4* color, const float speed, const int mode)
+{
+    ImSpinner::SpinnerSpinBars(label, radius, thickness, CCAST(color), speed, mode);
+}
+
+void ImSpinner_SpinnerMorphDots(const char* label, const float radius, const float thickness, const CImXVec4* color, const float speed, const int mode)
+{
+    ImSpinner::SpinnerMorphDots(label, radius, thickness, CCAST(color), speed, mode);
+}
+
+void ImSpinner_SpinnerCombDiscs(const char* label, const float radius, const float thickness, const CImXVec4* color, const float speed, const int mode)
+{
+    ImSpinner::SpinnerCombDiscs(label, radius, thickness, CCAST(color), speed, mode);
+}
+
+void ImSpinner_SpinnerOrbitDisc(const char* label, const float radius, const float thickness, const CImXVec4* color, const float speed, const int mode)
+{
+    ImSpinner::SpinnerOrbitDisc(label, radius, thickness, CCAST(color), speed, mode);
+}
+
+void ImSpinner_SpinnerDotsTyping(const char* label, const float radius, const float thickness, const CImXVec4* color, const float speed, const int dots)
+{
+    ImSpinner::SpinnerDotsTyping(label, radius, thickness, CCAST(color), speed, dots);
+}
+
+void ImSpinner_SpinnerDotsStep(const char* label, const float radius, const float thickness, const CImXVec4* color, const float speed, const int dots)
+{
+    ImSpinner::SpinnerDotsStep(label, radius, thickness, CCAST(color), speed, dots);
+}
+
+void ImSpinner_SpinnerDotsGather(const char* label, const float radius, const float thickness, const CImXVec4* color, const float speed, const int dots)
+{
+    ImSpinner::SpinnerDotsGather(label, radius, thickness, CCAST(color), speed, dots);
+}
+
 void ImSpinner_SpinnerSineArcs(const char* label, const float radius, const float thickness, const CImXVec4* color, const float speed)
 {
     ImSpinner::SpinnerSineArcs(label, radius, thickness, CCAST(color), speed);
@@ -676,6 +865,181 @@ void ImSpinner_SpinnerSineArcs(const char* label, const float radius, const floa
 void ImSpinner_SpinnerSwingDots(const char* label, const float radius, const float thickness, const CImXVec4* color, const float speed)
 {
     ImSpinner::SpinnerSwingDots(label, radius, thickness, CCAST(color), speed);
+}
+
+void ImSpinner_SpinnerDotsShift(const char* label, const float radius, const float thickness, const CImXVec4* color, const float speed)
+{
+    ImSpinner::SpinnerDotsShift(label, radius, thickness, CCAST(color), speed);
+}
+
+void ImSpinner_SpinnerDotsOrbit(const char* label, const float radius, const float thickness, const CImXVec4* color, const float speed)
+{
+    ImSpinner::SpinnerDotsOrbit(label, radius, thickness, CCAST(color), speed);
+}
+
+void ImSpinner_SpinnerDotsCircle(const char* label, const float radius, const float thickness, const CImXVec4* color, const float speed)
+{
+    ImSpinner::SpinnerDotsCircle(label, radius, thickness, CCAST(color), speed);
+}
+
+void ImSpinner_SpinnerDotsSquare(const char* label, const float radius, const float thickness, const CImXVec4* color, const float speed)
+{
+    ImSpinner::SpinnerDotsSquare(label, radius, thickness, CCAST(color), speed);
+}
+
+void ImSpinner_SpinnerDotsShuffle(const char* label, const float radius, const float thickness, const CImXVec4* color, const float speed)
+{
+    ImSpinner::SpinnerDotsShuffle(label, radius, thickness, CCAST(color), speed);
+}
+
+void ImSpinner_SpinnerDotsSplit(const char* label, const float radius, const float thickness, const CImXVec4* color, const float speed)
+{
+    ImSpinner::SpinnerDotsSplit(label, radius, thickness, CCAST(color), speed);
+}
+
+void ImSpinner_SpinnerDotsLeader(const char* label, const float radius, const float thickness, const CImXVec4* color, const float speed)
+{
+    ImSpinner::SpinnerDotsLeader(label, radius, thickness, CCAST(color), speed);
+}
+
+void ImSpinner_SpinnerDotsRolling(const char* label, const float radius, const float thickness, const CImXVec4* color, const float speed)
+{
+    ImSpinner::SpinnerDotsRolling(label, radius, thickness, CCAST(color), speed);
+}
+
+void ImSpinner_SpinnerDotsTriangle(const char* label, const float radius, const float thickness, const CImXVec4* color, const float speed)
+{
+    ImSpinner::SpinnerDotsTriangle(label, radius, thickness, CCAST(color), speed);
+}
+
+void ImSpinner_SpinnerDotsCascade(const char* label, const float radius, const float thickness, const CImXVec4* color, const float speed)
+{
+    ImSpinner::SpinnerDotsCascade(label, radius, thickness, CCAST(color), speed);
+}
+
+void ImSpinner_SpinnerDotsSwap(const char* label, const float radius, const float thickness, const CImXVec4* color, const float speed)
+{
+    ImSpinner::SpinnerDotsSwap(label, radius, thickness, CCAST(color), speed);
+}
+
+void ImSpinner_SpinnerDotsSpread(const char* label, const float radius, const float thickness, const CImXVec4* color, const float speed)
+{
+    ImSpinner::SpinnerDotsSpread(label, radius, thickness, CCAST(color), speed);
+}
+
+void ImSpinner_SpinnerDotsTwin(const char* label, const float radius, const float thickness, const CImXVec4* color, const float speed)
+{
+    ImSpinner::SpinnerDotsTwin(label, radius, thickness, CCAST(color), speed);
+}
+
+void ImSpinner_SpinnerDotsHop(const char* label, const float radius, const float thickness, const CImXVec4* color, const float speed)
+{
+    ImSpinner::SpinnerDotsHop(label, radius, thickness, CCAST(color), speed);
+}
+
+void ImSpinner_SpinnerDotsJiggle(const char* label, const float radius, const float thickness, const CImXVec4* color, const float speed)
+{
+    ImSpinner::SpinnerDotsJiggle(label, radius, thickness, CCAST(color), speed);
+}
+
+void ImSpinner_SpinnerDotsVibrate(const char* label, const float radius, const float thickness, const CImXVec4* color, const float speed)
+{
+    ImSpinner::SpinnerDotsVibrate(label, radius, thickness, CCAST(color), speed);
+}
+
+void ImSpinner_SpinnerDotsWiper(const char* label, const float radius, const float thickness, const CImXVec4* color, const float speed)
+{
+    ImSpinner::SpinnerDotsWiper(label, radius, thickness, CCAST(color), speed);
+}
+
+void ImSpinner_SpinnerDotsCollapse(const char* label, const float radius, const float thickness, const CImXVec4* color, const float speed)
+{
+    ImSpinner::SpinnerDotsCollapse(label, radius, thickness, CCAST(color), speed);
+}
+
+void ImSpinner_SpinnerDotsFlip(const char* label, const float radius, const float thickness, const CImXVec4* color, const float speed)
+{
+    ImSpinner::SpinnerDotsFlip(label, radius, thickness, CCAST(color), speed);
+}
+
+void ImSpinner_SpinnerDotsTurn(const char* label, const float radius, const float thickness, const CImXVec4* color, const float speed)
+{
+    ImSpinner::SpinnerDotsTurn(label, radius, thickness, CCAST(color), speed);
+}
+
+void ImSpinner_SpinnerDotsCarousel(const char* label, const float radius, const float thickness, const CImXVec4* color, const float speed)
+{
+    ImSpinner::SpinnerDotsCarousel(label, radius, thickness, CCAST(color), speed);
+}
+
+void ImSpinner_SpinnerDotsHalfTurn(const char* label, const float radius, const float thickness, const CImXVec4* color, const float speed)
+{
+    ImSpinner::SpinnerDotsHalfTurn(label, radius, thickness, CCAST(color), speed);
+}
+
+void ImSpinner_SpinnerDotsSlideFlip(const char* label, const float radius, const float thickness, const CImXVec4* color, const float speed)
+{
+    ImSpinner::SpinnerDotsSlideFlip(label, radius, thickness, CCAST(color), speed);
+}
+
+void ImSpinner_SpinnerDotsStaggerTurn(const char* label, const float radius, const float thickness, const CImXVec4* color, const float speed)
+{
+    ImSpinner::SpinnerDotsStaggerTurn(label, radius, thickness, CCAST(color), speed);
+}
+
+void ImSpinner_SpinnerDotsStretch(const char* label, const float radius, const float thickness, const CImXVec4* color, const float speed)
+{
+    ImSpinner::SpinnerDotsStretch(label, radius, thickness, CCAST(color), speed);
+}
+
+void ImSpinner_SpinnerDotsMirrorStretch(const char* label, const float radius, const float thickness, const CImXVec4* color, const float speed)
+{
+    ImSpinner::SpinnerDotsMirrorStretch(label, radius, thickness, CCAST(color), speed);
+}
+
+void ImSpinner_SpinnerDotsPinch(const char* label, const float radius, const float thickness, const CImXVec4* color, const float speed)
+{
+    ImSpinner::SpinnerDotsPinch(label, radius, thickness, CCAST(color), speed);
+}
+
+void ImSpinner_SpinnerDotsCorners(const char* label, const float radius, const float thickness, const CImXVec4* color, const float speed)
+{
+    ImSpinner::SpinnerDotsCorners(label, radius, thickness, CCAST(color), speed);
+}
+
+void ImSpinner_SpinnerDotsNudgeRotate(const char* label, const float radius, const float thickness, const CImXVec4* color, const float speed)
+{
+    ImSpinner::SpinnerDotsNudgeRotate(label, radius, thickness, CCAST(color), speed);
+}
+
+void ImSpinner_SpinnerDotsUnfold(const char* label, const float radius, const float thickness, const CImXVec4* color, const float speed)
+{
+    ImSpinner::SpinnerDotsUnfold(label, radius, thickness, CCAST(color), speed);
+}
+
+void ImSpinner_SpinnerDotsShuttle(const char* label, const float radius, const float thickness, const CImXVec4* color, const float speed)
+{
+    ImSpinner::SpinnerDotsShuttle(label, radius, thickness, CCAST(color), speed);
+}
+
+void ImSpinner_SpinnerDotsSpreadShuttle(const char* label, const float radius, const float thickness, const CImXVec4* color, const float speed)
+{
+    ImSpinner::SpinnerDotsSpreadShuttle(label, radius, thickness, CCAST(color), speed);
+}
+
+void ImSpinner_SpinnerDotsTriad(const char* label, const float radius, const float thickness, const CImXVec4* color, const float speed)
+{
+    ImSpinner::SpinnerDotsTriad(label, radius, thickness, CCAST(color), speed);
+}
+
+void ImSpinner_SpinnerDotsSatellite(const char* label, const float radius, const float thickness, const CImXVec4* color, const float speed)
+{
+    ImSpinner::SpinnerDotsSatellite(label, radius, thickness, CCAST(color), speed);
+}
+
+void ImSpinner_SpinnerDotsTrack(const char* label, const float radius, const float thickness, const CImXVec4* color, const float speed)
+{
+    ImSpinner::SpinnerDotsTrack(label, radius, thickness, CCAST(color), speed);
 }
  
 void ImSpinner_SpinnerSquishSquare(const char* label, const float radius, const CImXVec4* color, const float speed)
@@ -747,5 +1111,396 @@ void ImSpinner_SpinnerTextColorful(const char* label, const float radius, const 
 {
     ImSpinner::SpinnerTextColorful(label, radius, CCAST(color), speed, text);
 }
+
+void ImSpinner_SpinnerTextCascade(const char* label, const float radius, const CImXVec4* color, const float speed, const char* text)
+{
+    ImSpinner::SpinnerTextCascade(label, radius, CCAST(color), speed, text);
+}
+
+void ImSpinner_SpinnerTextConveyor(const char* label, const float radius, const CImXVec4* color, const float speed, const char* text)
+{
+    ImSpinner::SpinnerTextConveyor(label, radius, CCAST(color), speed, text);
+}
+
+void ImSpinner_SpinnerTextReveal(const char* label, const float radius, const CImXVec4* color, const float speed, const char* text)
+{
+    ImSpinner::SpinnerTextReveal(label, radius, CCAST(color), speed, text);
+}
+
+void ImSpinner_SpinnerTextWave(const char* label, const float radius, const CImXVec4* color, const float speed, const char* text)
+{
+    ImSpinner::SpinnerTextWave(label, radius, CCAST(color), speed, text);
+}
+
+void ImSpinner_SpinnerTextSweep(const char* label, const float radius, const CImXVec4* color, const CImXVec4* bg, const float speed, const char* text)
+{
+    ImSpinner::SpinnerTextSweep(label, radius, CCAST(color), CCAST(bg), speed, text);
+}
+
+void ImSpinner_SpinnerTextShine(const char* label, const float radius, const CImXVec4* color, const CImXVec4* bg, const float speed, const char* text)
+{
+    ImSpinner::SpinnerTextShine(label, radius, CCAST(color), CCAST(bg), speed, text);
+}
+
+void ImSpinner_SpinnerTextScrollSweep(const char* label, const float radius, const CImXVec4* color, const CImXVec4* bg, const float speed, const char* text)
+{
+    ImSpinner::SpinnerTextScrollSweep(label, radius, CCAST(color), CCAST(bg), speed, text);
+}
+
+void ImSpinner_SpinnerTextSpotlight(const char* label, const float radius, const CImXVec4* color, const float speed, const char* text)
+{
+    ImSpinner::SpinnerTextSpotlight(label, radius, CCAST(color), speed, text);
+}
+
+void ImSpinner_SpinnerTextShake(const char* label, const float radius, const CImXVec4* color, const float speed, const int mode, const char* text)
+{
+    ImSpinner::SpinnerTextShake(label, radius, CCAST(color), speed, mode, text);
+}
+
+void ImSpinner_SpinnerTextFlip(const char* label, const float radius, const CImXVec4* color, const float speed, const char* text)
+{
+    ImSpinner::SpinnerTextFlip(label, radius, CCAST(color), speed, text);
+}
+
+void ImSpinner_SpinnerTextSpin(const char* label, const float radius, const CImXVec4* color, const float speed, const char* text)
+{
+    ImSpinner::SpinnerTextSpin(label, radius, CCAST(color), speed, text);
+}
+
+void ImSpinner_SpinnerTextTumble(const char* label, const float radius, const CImXVec4* color, const float speed, const int mode, const char* text)
+{
+    ImSpinner::SpinnerTextTumble(label, radius, CCAST(color), speed, mode, text);
+}
+
+void ImSpinner_SpinnerTextSwirl(const char* label, const float radius, const CImXVec4* color, const float speed, const char* text)
+{
+    ImSpinner::SpinnerTextSwirl(label, radius, CCAST(color), speed, text);
+}
+
+void ImSpinner_SpinnerTextRollWave(const char* label, const float radius, const CImXVec4* color, const float speed, const char* text)
+{
+    ImSpinner::SpinnerTextRollWave(label, radius, CCAST(color), speed, text);
+}
+
+void ImSpinner_SpinnerTextVibrate(const char* label, const float radius, const CImXVec4* color, const float speed, const char* text)
+{
+    ImSpinner::SpinnerTextVibrate(label, radius, CCAST(color), speed, text);
+}
+
+void ImSpinner_SpinnerTextGlitch(const char* label, const float radius, const float speed, const char* text)
+{
+    ImSpinner::SpinnerTextGlitch(label, radius, speed, text);
+}
+
+void ImSpinner_SpinnerTextBlur(const char* label, const float radius, const CImXVec4* color, const float speed, const char* text)
+{
+    ImSpinner::SpinnerTextBlur(label, radius, CCAST(color), speed, text);
+}
+
+void ImSpinner_SpinnerTextDropout(const char* label, const float radius, const CImXVec4* color, const float speed, const char* text)
+{
+    ImSpinner::SpinnerTextDropout(label, radius, CCAST(color), speed, text);
+}
+
+void ImSpinner_SpinnerTextScanline(const char* label, const float radius, const CImXVec4* color, const float speed, const int mode, const char* text)
+{
+    ImSpinner::SpinnerTextScanline(label, radius, CCAST(color), speed, mode, text);
+}
+
+void ImSpinner_SpinnerTextSquash(const char* label, const float radius, const CImXVec4* color, const float speed, const char* text)
+{
+    ImSpinner::SpinnerTextSquash(label, radius, CCAST(color), speed, text);
+}
+
+void ImSpinner_SpinnerTextScramble(const char* label, const float radius, const CImXVec4* color, const float speed)
+{
+    ImSpinner::SpinnerTextScramble(label, radius, CCAST(color), speed);
+}
+
+void ImSpinner_SpinnerTextDecode(const char* label, const float radius, const CImXVec4* color, const float speed, const char* text)
+{
+    ImSpinner::SpinnerTextDecode(label, radius, CCAST(color), speed, text);
+}
+
+void ImSpinner_SpinnerTextVanish(const char* label, const float radius, const CImXVec4* color, const float speed, const char* text)
+{
+    ImSpinner::SpinnerTextVanish(label, radius, CCAST(color), speed, text);
+}
+
+void ImSpinner_SpinnerBarsSeqPulse(const char* label, const float radius, const float thickness, const CImXVec4* color, const float speed, const int mode)
+{
+    ImSpinner::SpinnerBarsSeqPulse(label, radius, thickness, CCAST(color), speed, mode);
+}
+
+void ImSpinner_SpinnerBarsCascadeGrow(const char* label, const float radius, const float thickness, const CImXVec4* color, const float speed, const int mode)
+{
+    ImSpinner::SpinnerBarsCascadeGrow(label, radius, thickness, CCAST(color), speed, mode);
+}
+
+void ImSpinner_SpinnerBarsRise(const char* label, const float radius, const float thickness, const CImXVec4* color, const float speed, const int mode)
+{
+    ImSpinner::SpinnerBarsRise(label, radius, thickness, CCAST(color), speed, mode);
+}
+
+void ImSpinner_SpinnerBarsCornerHop(const char* label, const float radius, const float thickness, const CImXVec4* color, const float speed, const int mode)
+{
+    ImSpinner::SpinnerBarsCornerHop(label, radius, thickness, CCAST(color), speed, mode);
+}
+
+void ImSpinner_SpinnerBarsDiagonalGrow(const char* label, const float radius, const float thickness, const CImXVec4* color, const float speed, const int mode)
+{
+    ImSpinner::SpinnerBarsDiagonalGrow(label, radius, thickness, CCAST(color), speed, mode);
+}
+
+void ImSpinner_SpinnerBarsBounceCenter(const char* label, const float radius, const float thickness, const CImXVec4* color, const float speed, const int mode)
+{
+    ImSpinner::SpinnerBarsBounceCenter(label, radius, thickness, CCAST(color), speed, mode);
+}
+
+void ImSpinner_SpinnerBarsScaleAlt(const char* label, const float radius, const float thickness, const CImXVec4* color, const float speed, const int mode)
+{
+    ImSpinner::SpinnerBarsScaleAlt(label, radius, thickness, CCAST(color), speed, mode);
+}
+
+void ImSpinner_SpinnerBarsCornerWave(const char* label, const float radius, const float thickness, const CImXVec4* color, const float speed, const int mode)
+{
+    ImSpinner::SpinnerBarsCornerWave(label, radius, thickness, CCAST(color), speed, mode);
+}
+
+void ImSpinner_SpinnerBarsJump(const char* label, const float radius, const float thickness, const CImXVec4* color, const float speed, const int mode)
+{
+    ImSpinner::SpinnerBarsJump(label, radius, thickness, CCAST(color), speed, mode);
+}
+
+void ImSpinner_SpinnerBarsDoubleRow(const char* label, const float radius, const float thickness, const CImXVec4* color, const float speed, const int mode)
+{
+    ImSpinner::SpinnerBarsDoubleRow(label, radius, thickness, CCAST(color), speed, mode);
+}
+
+void ImSpinner_SpinnerBarsSixPulse(const char* label, const float radius, const float thickness, const CImXVec4* color, const float speed, const int mode)
+{
+    ImSpinner::SpinnerBarsSixPulse(label, radius, thickness, CCAST(color), speed, mode);
+}
+
+void ImSpinner_SpinnerBarsSixStagger(const char* label, const float radius, const float thickness, const CImXVec4* color, const float speed, const int mode)
+{
+    ImSpinner::SpinnerBarsSixStagger(label, radius, thickness, CCAST(color), speed, mode);
+}
+
+void ImSpinner_SpinnerBarsMorphPlus(const char* label, const float radius, const float thickness, const CImXVec4* color, const float speed, const int mode)
+{
+    ImSpinner::SpinnerBarsMorphPlus(label, radius, thickness, CCAST(color), speed, mode);
+}
+
+void ImSpinner_SpinnerBarsFlipSix(const char* label, const float radius, const float thickness, const CImXVec4* color, const float speed, const int mode)
+{
+    ImSpinner::SpinnerBarsFlipSix(label, radius, thickness, CCAST(color), speed, mode);
+}
+
+void ImSpinner_SpinnerBarsSwapTriBottom(const char* label, const float radius, const float thickness, const CImXVec4* color, const float speed, const int mode)
+{
+    ImSpinner::SpinnerBarsSwapTriBottom(label, radius, thickness, CCAST(color), speed, mode);
+}
+
+void ImSpinner_SpinnerBarsSwapTriZigzag(const char* label, const float radius, const float thickness, const CImXVec4* color, const float speed, const int mode)
+{
+    ImSpinner::SpinnerBarsSwapTriZigzag(label, radius, thickness, CCAST(color), speed, mode);
+}
+
+void ImSpinner_SpinnerBarsMorphDiagonal(const char* label, const float radius, const float thickness, const CImXVec4* color, const float speed, const int mode)
+{
+    ImSpinner::SpinnerBarsMorphDiagonal(label, radius, thickness, CCAST(color), speed, mode);
+}
+
+void ImSpinner_SpinnerBarsSlideDiagonal(const char* label, const float radius, const float thickness, const CImXVec4* color, const float speed, const int mode)
+{
+    ImSpinner::SpinnerBarsSlideDiagonal(label, radius, thickness, CCAST(color), speed, mode);
+}
+
+void ImSpinner_SpinnerBarsConicAlternate(const char* label, const float radius, const float thickness, const CImXVec4* color, const float speed, const int mode)
+{
+    ImSpinner::SpinnerBarsConicAlternate(label, radius, thickness, CCAST(color), speed, mode);
+}
+
+void ImSpinner_SpinnerBarsConicWalk(const char* label, const float radius, const float thickness, const CImXVec4* color, const float speed, const int mode)
+{
+    ImSpinner::SpinnerBarsConicWalk(label, radius, thickness, CCAST(color), speed, mode);
+}
+
+void ImSpinner_SpinnerBarsMarchIn(const char* label, const float radius, const float thickness, const CImXVec4* color, const float speed, const int mode)
+{
+    ImSpinner::SpinnerBarsMarchIn(label, radius, thickness, CCAST(color), speed, mode);
+}
+
+void ImSpinner_SpinnerBarsMarchDown(const char* label, const float radius, const float thickness, const CImXVec4* color, const float speed, const int mode)
+{
+    ImSpinner::SpinnerBarsMarchDown(label, radius, thickness, CCAST(color), speed, mode);
+}
+
+void ImSpinner_SpinnerBarsWaveSkew(const char* label, const float radius, const float thickness, const CImXVec4* color, const float speed, const int mode)
+{
+    ImSpinner::SpinnerBarsWaveSkew(label, radius, thickness, CCAST(color), speed, mode);
+}
+
+void ImSpinner_SpinnerBarsRowDrop(const char* label, const float radius, const float thickness, const CImXVec4* color, const float speed, const int mode)
+{
+    ImSpinner::SpinnerBarsRowDrop(label, radius, thickness, CCAST(color), speed, mode);
+}
+
+void ImSpinner_SpinnerBarsZigzagRows(const char* label, const float radius, const float thickness, const CImXVec4* color, const float speed, const int mode)
+{
+    ImSpinner::SpinnerBarsZigzagRows(label, radius, thickness, CCAST(color), speed, mode);
+}
+
+void ImSpinner_SpinnerBarsFillCascade(const char* label, const float radius, const float thickness, const CImXVec4* color, const float speed, const int mode)
+{
+    ImSpinner::SpinnerBarsFillCascade(label, radius, thickness, CCAST(color), speed, mode);
+}
+
+void ImSpinner_SpinnerBarsPingPongRows(const char* label, const float radius, const float thickness, const CImXVec4* color, const float speed, const int mode)
+{
+    ImSpinner::SpinnerBarsPingPongRows(label, radius, thickness, CCAST(color), speed, mode);
+}
+
+void ImSpinner_SpinnerBarsWaveRowsWide(const char* label, const float radius, const float thickness, const CImXVec4* color, const float speed, const int mode)
+{
+    ImSpinner::SpinnerBarsWaveRowsWide(label, radius, thickness, CCAST(color), speed, mode);
+}
+
+void ImSpinner_SpinnerBarsGridFade(const char* label, const float radius, const float thickness, const CImXVec4* color, const float speed, const int mode)
+{
+    ImSpinner::SpinnerBarsGridFade(label, radius, thickness, CCAST(color), speed, mode);
+}
+
+void ImSpinner_SpinnerBarsGridSpread(const char* label, const float radius, const float thickness, const CImXVec4* color, const float speed, const int mode)
+{
+    ImSpinner::SpinnerBarsGridSpread(label, radius, thickness, CCAST(color), speed, mode);
+}
+
+void ImSpinner_SpinnerBarsStretch(const char* label, const float radius, const float thickness, const CImXVec4* color, const float speed, const int mode)
+{
+    ImSpinner::SpinnerBarsStretch(label, radius, thickness, CCAST(color), speed, mode);
+}
+
+void ImSpinner_SpinnerBarsStretchSeq(const char* label, const float radius, const float thickness, const CImXVec4* color, const float speed, const int mode)
+{
+    ImSpinner::SpinnerBarsStretchSeq(label, radius, thickness, CCAST(color), speed, mode);
+}
+
+void ImSpinner_SpinnerBarsBounceBall(const char* label, const float radius, const float thickness, const CImXVec4* color, const float speed, const int mode)
+{
+    ImSpinner::SpinnerBarsBounceBall(label, radius, thickness, CCAST(color), speed, mode);
+}
+
+void ImSpinner_SpinnerBarsKnockDots(const char* label, const float radius, const float thickness, const CImXVec4* color, const float speed, const int mode)
+{
+    ImSpinner::SpinnerBarsKnockDots(label, radius, thickness, CCAST(color), speed, mode);
+}
+
+void ImSpinner_SpinnerBarsStaircase(const char* label, const float radius, const float thickness, const CImXVec4* color, const float speed, const int mode)
+{
+    ImSpinner::SpinnerBarsStaircase(label, radius, thickness, CCAST(color), speed, mode);
+}
+
+void ImSpinner_SpinnerBarsKnockAway(const char* label, const float radius, const float thickness, const CImXVec4* color, const float speed, const int mode)
+{
+    ImSpinner::SpinnerBarsKnockAway(label, radius, thickness, CCAST(color), speed, mode);
+}
+
+void ImSpinner_SpinnerBarsGates(const char* label, const float radius, const float thickness, const CImXVec4* color, const float speed, const int mode)
+{
+    ImSpinner::SpinnerBarsGates(label, radius, thickness, CCAST(color), speed, mode);
+}
+
+void ImSpinner_SpinnerBarsCapture(const char* label, const float radius, const float thickness, const CImXVec4* color, const float speed, const int mode)
+{
+    ImSpinner::SpinnerBarsCapture(label, radius, thickness, CCAST(color), speed, mode);
+}
+
+void ImSpinner_SpinnerBarsEscape(const char* label, const float radius, const float thickness, const CImXVec4* color, const float speed, const int mode)
+{
+    ImSpinner::SpinnerBarsEscape(label, radius, thickness, CCAST(color), speed, mode);
+}
+
+void ImSpinner_SpinnerBarsDevour(const char* label, const float radius, const float thickness, const CImXVec4* color, const float speed, const int mode)
+{
+    ImSpinner::SpinnerBarsDevour(label, radius, thickness, CCAST(color), speed, mode);
+}
+
+void ImSpinner_SpinnerBarsLift(const char* label, const float radius, const float thickness, const CImXVec4* color, const float speed, const int mode)
+{
+    ImSpinner::SpinnerBarsLift(label, radius, thickness, CCAST(color), speed, mode);
+}
+
+void ImSpinner_SpinnerBarsGapSlide(const char* label, const float radius, const float thickness, const CImXVec4* color, const float speed, const int mode)
+{
+    ImSpinner::SpinnerBarsGapSlide(label, radius, thickness, CCAST(color), speed, mode);
+}
+
+void ImSpinner_SpinnerBarsConverge(const char* label, const float radius, const float thickness, const CImXVec4* color, const float speed, const int mode)
+{
+    ImSpinner::SpinnerBarsConverge(label, radius, thickness, CCAST(color), speed, mode);
+}
+
+void ImSpinner_SpinnerBarsSwapEnds(const char* label, const float radius, const float thickness, const CImXVec4* color, const float speed, const int mode)
+{
+    ImSpinner::SpinnerBarsSwapEnds(label, radius, thickness, CCAST(color), speed, mode);
+}
+
+void ImSpinner_SpinnerBarsRelay(const char* label, const float radius, const float thickness, const CImXVec4* color, const float speed, const int mode)
+{
+    ImSpinner::SpinnerBarsRelay(label, radius, thickness, CCAST(color), speed, mode);
+}
+
+void ImSpinner_SpinnerBarsPush(const char* label, const float radius, const float thickness, const CImXVec4* color, const float speed, const int mode)
+{
+    ImSpinner::SpinnerBarsPush(label, radius, thickness, CCAST(color), speed, mode);
+}
+
+void ImSpinner_SpinnerBarsPushWave(const char* label, const float radius, const float thickness, const CImXVec4* color, const float speed, const int mode)
+{
+    ImSpinner::SpinnerBarsPushWave(label, radius, thickness, CCAST(color), speed, mode);
+}
+
+void ImSpinner_SpinnerBarsGather(const char* label, const float radius, const float thickness, const CImXVec4* color, const float speed, const int mode)
+{
+    ImSpinner::SpinnerBarsGather(label, radius, thickness, CCAST(color), speed, mode);
+}
+
+void ImSpinner_SpinnerBarsSplit(const char* label, const float radius, const float thickness, const CImXVec4* color, const float speed, const int mode)
+{
+    ImSpinner::SpinnerBarsSplit(label, radius, thickness, CCAST(color), speed, mode);
+}
+
+void ImSpinner_SpinnerBarsSlot(const char* label, const float radius, const float thickness, const CImXVec4* color, const float speed, const int mode)
+{
+    ImSpinner::SpinnerBarsSlot(label, radius, thickness, CCAST(color), speed, mode);
+}
+
+void ImSpinner_SpinnerConicGrid(const char* label, const float radius, const float thickness, const CImXVec4* color, const float speed, const int mode)
+{
+    ImSpinner::SpinnerConicGrid(label, radius, thickness, CCAST(color), speed, mode);
+}
+
+void ImSpinner_SpinnerArcArrow(const char* label, const float radius, const float thickness, const CImXVec4* color, const float speed, const int mode)
+{
+    ImSpinner::SpinnerArcArrow(label, radius, thickness, CCAST(color), speed, mode);
+}
+
+void ImSpinner_SpinnerOrbitMoon(const char* label, const float radius, const float thickness, const CImXVec4* color, const float speed, const int mode)
+{
+    ImSpinner::SpinnerOrbitMoon(label, radius, thickness, CCAST(color), speed, mode);
+}
+
+void ImSpinner_SpinnerConicWheels(const char* label, const float radius, const float thickness, const CImXVec4* color, const float speed, const int mode)
+{
+    ImSpinner::SpinnerConicWheels(label, radius, thickness, CCAST(color), speed, mode);
+}
+
+void ImSpinner_SpinnerDotRing(const char* label, const float radius, const float thickness, const CImXVec4* color, const float speed, const int mode)
+{
+    ImSpinner::SpinnerDotRing(label, radius, thickness, CCAST(color), speed, mode);
+}
+
 #endif
 #endif
