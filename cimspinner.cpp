@@ -1,7 +1,8 @@
 #include "cimspinner.h"
 
 #ifdef __has_include
-#if __has_include(<imspinner.h>)
+// Keep this list in sync with the guard in cimspinner.h.
+#if __has_include(<imspinner.h>) && __has_include(<imspinner_text.h>) && __has_include(<imspinner_bars.h>) && __has_include(<imspinner_dots.h>) && __has_include(<imspinner_shapes.h>) && __has_include(<imspinner_compat.h>)
 #include <imspinner.h>
 #include <imspinner_text.h>
 #include <imspinner_bars.h>
@@ -46,14 +47,14 @@ void ImSpinner_SpinnerAng8(const char* label, const float radius, const float th
     ImSpinner::SpinnerAng8(label, radius, thickness, CCAST(color), CCAST(bg), speed, angle, mode, rkoef);
 }
 
-void ImSpinner_SpinnerDots(const char* label, float* nextdot, const float radius, const float thickness, const CImXVec4* color, const float speed, const size_t dots2, const float minth, const int mode)
+void ImSpinner_SpinnerDots(const char* label, float* nextdot, const float radius, const float thickness, const CImXVec4* color, const float speed, const size_t dots, const float minth, const int mode)
 {
-    ImSpinner::SpinnerDots(label, nextdot, radius, thickness, CCAST(color), speed, dots2, minth, mode);
+    ImSpinner::SpinnerDots(label, nextdot, radius, thickness, CCAST(color), speed, dots, minth, mode);
 }
 
-void ImSpinner_SpinnerVDots(const char* label, const float radius, const float thickness, const CImXVec4* color, const CImXVec4* bgcolor, const float speed, const size_t dots2, const size_t mdots, const int mode)
+void ImSpinner_SpinnerVDots(const char* label, const float radius, const float thickness, const CImXVec4* color, const CImXVec4* bgcolor, const float speed, const size_t dots, const size_t mdots, const int mode)
 {
-    ImSpinner::SpinnerVDots(label, radius, thickness, CCAST(color), CCAST(bgcolor), speed, dots2, mdots, mode);
+    ImSpinner::SpinnerVDots(label, radius, thickness, CCAST(color), CCAST(bgcolor), speed, dots, mdots, mode);
 }
 
 void ImSpinner_SpinnerTwinAng(const char* label, const float radius1, const float radius2, const float thickness, const CImXVec4* color1, const CImXVec4* color2, const float speed, const float angle, const int mode)
@@ -277,9 +278,9 @@ void ImSpinner_SpinnerTrianglesSelector(const char* label, const float radius, c
     ImSpinner::SpinnerTrianglesSelector(label, radius, thickness, CCAST(color), CCAST(bg), speed, bars);
 }
 
-void ImSpinner_SpinnerRotateWheel(const char* label, const float radius, const float thickness, const CImXVec4* bg_color, const CImXVec4* color, const float speed, const size_t pins2)
+void ImSpinner_SpinnerRotateWheel(const char* label, const float radius, const float thickness, const CImXVec4* bg_color, const CImXVec4* color, const float speed, const size_t pins)
 {
-    ImSpinner::SpinnerRotateWheel(label, radius, thickness, CCAST(bg_color), CCAST(color), speed, pins2);
+    ImSpinner::SpinnerRotateWheel(label, radius, thickness, CCAST(bg_color), CCAST(color), speed, pins);
 }
 
 void ImSpinner_SpinnerFlowingGradient(const char* label, const float radius, const float thickness, const CImXVec4* color, const CImXVec4* bg, const float speed, const float angle)
@@ -297,7 +298,7 @@ void ImSpinner_SpinnerFluidPoints(const char* label, const float radius, const f
     ImSpinner::SpinnerFluidPoints(label, radius, thickness, CCAST(color), speed, dots, delta);
 }
 
-void ImSpinner_SpinnerCamera(const char* label, const float radius, const float thickness, ImSpinner_LeafColor* leaf_color, const float speed, const size_t bars, const int mode)
+void ImSpinner_SpinnerCamera(const char* label, const float radius, const float thickness, const ImSpinner_LeafColor leaf_color, const float speed, const size_t bars, const int mode)
 {
     ImSpinner::SpinnerCamera(label, radius, thickness, reinterpret_cast<ImSpinner::LeafColor*>(leaf_color), speed, bars, mode);
 }
@@ -387,9 +388,9 @@ void ImSpinner_SpinnerLemniscate(const char* label, const float radius, const fl
     ImSpinner::SpinnerLemniscate(label, radius, thickness, CCAST(color), speed, angle);
 }
 
-void ImSpinner_SpinnerRotateGear(const char* label, const float radius, const float thickness, const CImXVec4* color, const float speed, const size_t pins2)
+void ImSpinner_SpinnerRotateGear(const char* label, const float radius, const float thickness, const CImXVec4* color, const float speed, const size_t pins)
 {
-    ImSpinner::SpinnerRotateGear(label, radius, thickness, CCAST(color), speed, pins2);
+    ImSpinner::SpinnerRotateGear(label, radius, thickness, CCAST(color), speed, pins);
 }
 
 void ImSpinner_SpinnerAtom(const char* label, const float radius, const float thickness, const CImXVec4* color, const float speed, const int elipses)

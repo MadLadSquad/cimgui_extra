@@ -1,6 +1,8 @@
 #pragma once
 #ifdef __has_include
-#if __has_include(<imgui_toggle.h>)
+// imgui_toggle.h does not pull in the palette header, which the palette API below needs, so check both.
+// Keep this list in sync with the guard in cimgui_toggles.cpp.
+#if __has_include(<imgui_toggle.h>) && __has_include(<imgui_toggle_palette.h>)
 
 #include "cimgui_extra_common.h"
 
@@ -59,7 +61,7 @@ extern "C"
         CImXVec4 frameBorder;
         CImXVec4 frameShadow;
         CImXVec4 knobBorder;
-        CImXVec4 knobHoverShadow;
+        CImXVec4 knobShadow;
         CImXVec4 A11yGlyph;
     } ImGui_TogglePalette;
 
@@ -91,6 +93,8 @@ extern "C"
     MLS_PUBLIC_API void ImGui_UnionPalette(ImGui_TogglePalette* target, const ImGui_TogglePalette* candidate, const CImXVec4* colors, bool v);
     MLS_PUBLIC_API void ImGui_BlendPalettes(ImGui_TogglePalette* result, const ImGui_TogglePalette* a, const ImGui_TogglePalette* b, float blend_amount);
 
+    // Pass NULL for size to use the default of (0, 0), where the toggle height is set by ImGui_GetFrameHeight() and
+    // the width by the config's width ratio.
     MLS_PUBLIC_API bool ImGui_Toggle(const char* label, bool* v, ImGui_ToggleFlags flags, float animation_duration, float frame_rounding, float knob_rounding, const CImXVec2* size);
 #ifdef __cplusplus
 }

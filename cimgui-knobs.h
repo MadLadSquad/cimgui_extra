@@ -46,22 +46,24 @@ extern "C"
     MLS_PUBLIC_API bool ImGuiKnobs_Knob(const char* label, float* p_value, float v_min, float v_max);
 
     // Default values:
-    // format = "%.3"
+    // speed = 0
+    // format = "%.3f"
     // variant = CImGuiKnob_Variant_Tick
     // size = 0
-    // flags = CImGuiKnob_flags_None,
-    // int steps = 10
+    // flags = CImGuiKnob_flags_None
+    // steps = 10
     // angle_min = -1
     // angle_max = -1
     MLS_PUBLIC_API bool ImGuiKnobs_KnobEx(const char* label, float* p_value, float v_min, float v_max, float speed, const char* format, ImGuiKnob_Variant variant, float size, ImGuiKnob_Flags flags, int steps, float angle_min, float angle_max);
     MLS_PUBLIC_API bool ImGuiKnobs_KnobInt(const char* label, int* p_value, int v_min, int v_max);
 
     // Default values:
+    // speed = 0
     // format = "%i"
     // variant = CImGuiKnob_Variant_Tick
     // size = 0
-    // flags = CImGuiKnob_flags_None,
-    // int steps = 10
+    // flags = CImGuiKnob_flags_None
+    // steps = 10
     // angle_min = -1
     // angle_max = -1
     MLS_PUBLIC_API bool ImGuiKnobs_KnobIntEx(const char* label, int* p_value, int v_min, int v_max, float speed, const char* format, ImGuiKnob_Variant variant, float size, ImGuiKnob_Flags flags, int steps, float angle_min, float angle_max);

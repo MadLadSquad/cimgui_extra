@@ -1,5 +1,5 @@
 #ifdef __has_include
-#if __has_include(<imgui-knobs.h>) && __has_include (<cimgui.h>)
+#if __has_include(<imgui_toggle.h>) && __has_include(<imgui_toggle_palette.h>)
 #include "cimgui_toggles.h"
 #include <imgui_toggle.h>
 #include <imgui_toggle_palette.h>
@@ -17,7 +17,7 @@ void ImGui_BlendPalettes(ImGui_TogglePalette* result, const ImGui_TogglePalette*
 
 bool ImGui_Toggle(const char* label, bool* v, const ImGui_ToggleFlags flags, const float animation_duration, const float frame_rounding, const float knob_rounding, const CImXVec2* size)
 {
-    return ImGui::Toggle(label, v, flags, animation_duration, frame_rounding, knob_rounding, *reinterpret_cast<const ImVec2*>(size));
+    return ImGui::Toggle(label, v, flags, animation_duration, frame_rounding, knob_rounding, size ? *reinterpret_cast<const ImVec2*>(size) : ImVec2());
 }
 
 

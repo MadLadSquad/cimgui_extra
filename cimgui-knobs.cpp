@@ -1,5 +1,5 @@
 #ifdef __has_include
-#if __has_include(<imgui-knobs.h>) && __has_include (<cimgui.h>)
+#if __has_include(<imgui-knobs.h>)
 
 #include "cimgui-knobs.h"
 #include <imgui-knobs.h>
